@@ -31,14 +31,14 @@ function getComputerChoice () {
 
 function getResult() {
     if (cpuChoice === userChoice) {
-        result.innerHTML = "It's a Draw!";
+        result.innerHTML = "it's a draw!";
     }
     if (cpuChoice === 'rock' && userChoice === 'paper' || cpuChoice === 'paper' 
     && userChoice === 'scissors' || cpuChoice === 'scissors' && userChoice === 'rock') {
-        result.innerHTML = "You Won!";
+        result.innerHTML = "you won!";
     }
     if (cpuChoice === 'rock' && userChoice === 'scissors' || cpuChoice === 'paper' 
     && userChoice === 'rock' || cpuChoice === 'scissors' && userChoice === 'paper') {
-        result.innerHTML = "Wrong Move!";
+        result.innerHTML = "wrong move!";
     }
 }
